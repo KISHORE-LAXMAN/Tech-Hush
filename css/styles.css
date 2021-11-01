@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --primary: #4f3ff0;
+    --primary-shadow: rgba(79, 63, 240 , 0.25);
+    --secondary: #f53b57;
+}
+
+/* Navbar */
+
+
+/* Footer */
+
+#footer-icons {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 40px 20px;
+}
+
+footer .social-icons {
+	padding: 10px;
+	text-align: center;
+}
+
+footer .fa-2x {
+	padding: 10px;
+	transition: 0.5s;
+}
+
+footer .fa-2x:hover {
+	color: var(--primary);
+}
+
+footer p {
+	margin: 20px 0;
+	font-size: 1.3rem;
+}
+
+footer span {
+	margin-left: 8px;
+	color: var(--primary);
+	font-weight: 600;
+	font-size: 1.5rem;
+}
+
+/* Forms */
+
+#forms {
+	border-radius: 20px 20px 0 0;
+	width: 100vw;
+	background-color: var(--primary);
+	margin-bottom: 10px;
+}
+
+form {
+	display: flex;
+	justify-content: flex-end;
+}
+
+form input {
+	padding: 10px 15px !important;
+}
+
+.name-section {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+
+.name-section .col-6 {
+	width: 49%;
+}
+
+form h1 {
+	color: white;
+	font-weight: 800;
+	letter-spacing: 3px;
+	font-size: 4rem;
+}
+
+.btn-form-outline {
+    background-color: transparent;
+    color: white;
+    font-size: 1.3rem;
+    padding: 13px 10px ;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-top: 20px;
+    border: 2px solid white;
+    transition: ease-in 0.4s;
+}
+
+.btn-form-outline:hover {
+    background-color: white;
+	cursor: pointer;
+	color: var(--primary);
+}
+
+
+/* Media Queries */
+
+@media (max-width: 990px) {
+
+	form h1 {
+		font-size: 3rem;
+		margin-top: 50px;
+	}
+
+}
+
+@media (max-width:  575px) {
+
+	footer .social-icons {
+		padding: 5px;
+	}
+
+	footer p { 
+		margin: 10px 0;
+		font-size: 1rem;
+	} 
+
+	footer span {
+		font-size: 1.2rem;
+	}
+
+	.fa-2x {
+		font-size: 1.8rem;
+	}
+
+	.name-section {
+		flex-direction: column;
+	}
+
+	.name-section .col-6 {
+		width: 100%;
+	}
+
+	.name-section input:nth-of-type(1) {
+		margin-top: 24px;
+	}
+
+}
+
+@media (max-width:  400px) {
+
+	#forms .col-lg-6 {
+		padding: 0 15px !important;
+	}
+
+	form h1 {
+		font-size: 2rem;
+	}
+
+}
+
+@media (max-width:  300px) {
+
+	footer .social-icons {
+		padding: 0;
+	}
+
+	footer p { 
+		font-size: 0.8rem;
+	} 
+
+	footer span {
+		font-size: 1rem;
+	}
+
+	.fa-2x {
+		font-size: 1.5rem;
+	}
+
+}
