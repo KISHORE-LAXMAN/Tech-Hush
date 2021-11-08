@@ -11,7 +11,32 @@
     --secondary: #f53b57;
 }
 
+/* Wrapper */
+
+.wrapper{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.container-bg{
+	background-color: #4f3ff0;
+}
+
 /* Navbar */
+
+.btn-white{
+	box-shadow:0 0 20px 0 #4f3ff0;
+}
+
+.btn-white:hover{
+
+}
+
+.btn-black{
+
+}
+
 
 
 /* Footer */
